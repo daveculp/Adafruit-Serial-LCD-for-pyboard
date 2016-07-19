@@ -3,8 +3,11 @@
 This is a simple library for interfacing an Adfruit serial LCD to a pyboard.
 The LCD can be purchased [here] (https://www.adafruit.com/product/782):
 
-To use, simply import the AfSerLCD module and create an AfSerLCD object.
-The parameters are the UART number on the pyboard and the baud rate:
+To use, simply import the afserLCD module and create an AfSerLCD object.
+The parameters are the UART number on the pyboard and the baud rate.  If a 
+baud rate is not specified the object defaults to 9600 baud.
+
+Example:
 
 ```python
 from afserlcd import *
