@@ -36,5 +36,25 @@ print("Setting GPO's on LCD to LOW, check with a meter!")
 for x in range(1,5):
     lcd.setGPOState(x, False)
 ```
+### API Reference:
+
+*writeString(string)
+*clearScreen()
+*setContrast(contrast, save=False)
+*setBrightness(brightness, save=False):
+*displayOn()
+*displayOff()
+*home()
+*setCursorPosition(row,col)
+*setBacklightColor(r,g,b)
+*setAutoscroll(scrollState)
+*setSplashScreen(splashMsg):
+*cursorBack():
+*cursorForward():
+*setUnderlineCursor(state=True)
+*setBlockCursor(state=True)
+*setLCDSize(rows=2, cols=16):
+*setGPOState(gpoNum, state=False):
+*createCustomChar(charNum, byteList):
 
 
