@@ -96,13 +96,13 @@ class AfSerLCD:
     def cursorForward(self):
         self.sendCommand(CURSOR_FORWARD)
         
-    def setUnderlineCursor(state=True):
+    def setUnderlineCursor(self, state=True):
         if state == True:
             self.sendCommand(UNDERLINE_CURSOR_ON)
         else:
             self.sendCommand(UNDERLINE_CURSOR_OFF)
     
-    def setBlockCursor(state=True):
+    def setBlockCursor(self, state=True):
         if state == True:
             self.sendCommand(BLOCK_CURSOR_ON)
         else:
