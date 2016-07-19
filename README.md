@@ -7,7 +7,7 @@ To use, simply import the AfSerLCD module and create an AfSerLCD object.
 The parameters are the UART number on the pyboard and the baud rate:
 
 ```python
-from AfSerLCD import *
+from afserlcd import *
 lcd = AfSerLCD(6,9600)
 ```
 
