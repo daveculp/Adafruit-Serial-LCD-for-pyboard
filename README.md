@@ -1,6 +1,7 @@
 # Adafruit-Serial-LCD-for-pyboard
 
 This is a simple library for interfacing an Adfruit serial LCD to a pyboard.
+The LCD can be purchased [here] (https://www.adafruit.com/product/782):
 
 To use, simply import the AfSerLCD module and create and AfSerLCD object.
 The parameters are the UART number on the pyboatrd and the baud rate:
