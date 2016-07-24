@@ -32,6 +32,10 @@ SET_GPO_ON              =   0X57
 
 class AfSerLCD:
     def __init__(self, uartNum, baud=9600):
+		
+		if uartNum == 5 or uartNum < 1 or uartNum > 6:
+			print ("ERROR: Uart must be 1,2,3,4, or 6!")
+			return
         self.uart = pyb.UART( uartNum, baud) 
     
     def sendCommand(self, command):
